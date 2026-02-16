@@ -64,21 +64,24 @@ const fullUrl = computed(() => {
   return `${siteUrl}${route.path}`
 })
 
-// Normalisasi path untuk menghindari masalah trailing slash atau perbedaan di environment SSR
-const { data: post } = await useAsyncData(`blog-${route.path}`, async () => {
-  const cleanPath = route.path.replace(/\/$/, '') || '/'
-  
-  // Mencoba ambil berdasarkan path yang bersih
-  let result = await queryCollection('blog').path(cleanPath).first()
-  
-  // Jika tidak ditemukan (mungkin karena perbedaan prefix di prod), coba cari berdasarkan stem
-  if (!result) {
-    const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
-    const stem = `blog/${slug}`
-    result = await queryCollection('blog').where('stem', '=', stem).first()
+// Slug dari route (stabil untuk cache di dev vs Vercel/SSR)
+const slugParam = Array.isArray(route.params.slug) ? route.params.slug.join('/') : (route.params.slug || '')
+
+// Normalisasi path: coba beberapa format agar jalan di dev dan production (Vercel)
+const { data: post } = await useAsyncData(`blog-${slugParam || route.path}`, async () => {
+  const rawPath = route.path.replace(/\/$/, '') || '/'
+  const pathNoLeading = rawPath.replace(/^\//, '')
+  const stem = `blog/${slugParam}`
+
+  // Coba urutan: path lengkap → path tanpa leading slash → stem (sesuai filesystem)
+  const pathsToTry = [rawPath, pathNoLeading, stem]
+  for (const p of pathsToTry) {
+    const result = await queryCollection('blog').path(p).first()
+    if (result) return result
   }
-  
-  return result
+  // Fallback: match by stem (field dari Nuxt Content)
+  const byStem = await queryCollection('blog').where('stem', '=', stem).first()
+  return byStem || null
 })
 
 // SEO & Social Share

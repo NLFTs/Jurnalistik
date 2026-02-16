@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { readdirSync } from 'node:fs'
+import { join } from 'node:path'
+
 export default defineNuxtConfig({
   // Nuxt 4 compatibility
   future: {
@@ -93,5 +96,35 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+
+  // Agar /blog/nuxt4 dll. ter-render di build (Vercel) dan konten tersedia saat direct hit
+  routeRules: {
+    '/blog/**': { prerender: true }
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/blog']
+    }
+  },
+
+  hooks: {
+    // Daftarkan route blog dari content agar pasti ter-prerender (Vercel direct hit)
+    'prerender:routes'(ctx) {
+      try {
+        const contentBlog = join(process.cwd(), 'content', 'blog')
+        const files = readdirSync(contentBlog, { withFileTypes: true })
+        for (const f of files) {
+          if (f.isFile() && f.name.endsWith('.md')) {
+            const slug = f.name.replace(/\.md$/, '')
+            ctx.routes.add(`/blog/${slug}`)
+          }
+        }
+      } catch (_) {
+        // content/blog boleh belum ada saat hook jalan
+      }
+    }
+  }
 })
