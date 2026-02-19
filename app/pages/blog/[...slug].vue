@@ -58,7 +58,7 @@ const postMain = ref(null)
 let ctx
 
 const config = useRuntimeConfig()
-const siteUrl = config.public.site?.url || 'https://blog.davingm.com'
+const siteUrl = config.public.site?.url || 'https://jurnalistik.nlfts.dev'
 
 const fullUrl = computed(() => {
   return `${siteUrl}${route.path}`
@@ -68,20 +68,25 @@ const fullUrl = computed(() => {
 const slugParam = Array.isArray(route.params.slug) ? route.params.slug.join('/') : (route.params.slug || '')
 
 // Normalisasi path: coba beberapa format agar jalan di dev dan production (Vercel)
-const { data: post } = await useAsyncData(`blog-${slugParam || route.path}`, async () => {
-  const rawPath = route.path.replace(/\/$/, '') || '/'
-  const pathNoLeading = rawPath.replace(/^\//, '')
-  const stem = `blog/${slugParam}`
-
-  // Coba urutan: path lengkap → path tanpa leading slash → stem (sesuai filesystem)
-  const pathsToTry = [rawPath, pathNoLeading, stem]
-  for (const p of pathsToTry) {
-    const result = await queryCollection('blog').path(p).first()
-    if (result) return result
+const { data: post } = await useAsyncData(`blog-post-${slugParam}`, async () => {
+  // Normalize path to look for
+  const currentPath = route.path.replace(/\/$/, '')
+  
+  // Try finding by path first
+  let result = await queryCollection('blog').path(currentPath).first()
+  
+  // If not found, try by stem (filename)
+  if (!result) {
+    const stem = slugParam.startsWith('blog/') ? slugParam : `blog/${slugParam}`
+    result = await queryCollection('blog').where('stem', '=', stem).first()
   }
-  // Fallback: match by stem (field dari Nuxt Content)
-  const byStem = await queryCollection('blog').where('stem', '=', stem).first()
-  return byStem || null
+
+  // Final check for type
+  if (result && result.type === 'article') {
+    return result
+  }
+  
+  return null
 })
 
 // SEO & Social Share

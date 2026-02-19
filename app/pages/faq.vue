@@ -212,7 +212,7 @@
           Jangan ragu untuk menghubungi kami langsung
         </p>
         <a 
-          href="https://nlfts.vercel.app/connected/discord" 
+          href="https://nlfts.dev/connected/discord" 
           class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition-colors duration-300"
         >
           Temui Kami di Discord

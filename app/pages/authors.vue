@@ -120,8 +120,13 @@ const authors = [
 useSeoMeta({
   title: 'Authors',
   description: 'Tim penulis yang berkontribusi dalam jurnal NLFTs',
-  ogTitle: 'Authors | NLFTs',
+  ogUrl: 'https://jurnalistik.nlfts.dev/authors',
+  ogTitle: 'Authors | Jurnalistik',
   ogDescription: 'Tim penulis yang berkontribusi dalam jurnal NLFTs',
+  ogImage: 'https://jurnalistik.nlfts.dev/images/blog-og.jpg',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Authors | Jurnalistik',
+  twitterImage: 'https://jurnalistik.nlfts.dev/images/blog-og.jpg',
 })
 </script>
 

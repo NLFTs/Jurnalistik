@@ -3,6 +3,7 @@ title: "Update baru Nuxt 4 bikin Pusing?"
 description: "Baru Baru Ini Nuxt merilis versi terbarunya yaitu Nuxt 4. dan banyak sekali perubahan yang terjadi."
 date: "2024-02-06"
 image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8mpeku6brwkfmrsumu3h.png"
+type: "article"
 tags: ["nuxt", "vue", "javascript"]
 author:
   name: "Davin GM"

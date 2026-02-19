@@ -3,6 +3,7 @@ title: "Apa Itu Laravel?"
 description: "Apa itu Laravel? Laravel adalah sebuah framework PHP yang dirancang untuk memudahkan pengembangan aplikasi web dengan sintaks yang elegan dan ekspresif."
 date: "2026-02-07"
 image: "https://www.angon.co.id/wp-content/uploads/2023/10/1686539179-1536x768.png"
+type: "article"
 tags: ["Laravel 12", "PHP", "Framework"]
 author:
   name: "Davin GM"

@@ -21,7 +21,7 @@ watch(() => route.path, (newPath) => {
 
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | MyBlog` : 'MyBlog - Modern Content Experience';
+    return titleChunk ? `${titleChunk} | Jurnalistik` : 'Jurnalistik - Modern Content Experience';
   },
   htmlAttrs: {
     lang: 'id'

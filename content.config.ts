@@ -10,6 +10,7 @@ export default defineContentConfig({
                 description: z.string(),
                 date: z.string(),
                 image: z.string().optional(),
+                type: z.enum(['article', 'image']).default('article'),
                 tags: z.array(z.string()).default([]),
                 author: z.object({
                     name: z.string(),

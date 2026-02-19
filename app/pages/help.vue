@@ -20,8 +20,8 @@
         <p class="text-neutral-600 mb-4">
           Kirim email ke kami untuk pertanyaan atau bantuan
         </p>
-        <a href="mailto:support@nlfts.com" class="text-emerald-600 hover:text-emerald-700 font-mono">
-          davin.gm.etc@gmail.com
+        <a href="mailto:talk@jurnalistik.nlfts.dev" class="text-emerald-600 hover:text-emerald-700 font-mono">
+          talk@jurnalistik.nlfts.dev
         </a>
       </section>
 

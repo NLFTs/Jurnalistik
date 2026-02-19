@@ -313,23 +313,23 @@ onUnmounted(() => {
   transition: all 0.4s ease;
 }
 
-/* Accent Dot - Signature Red Mark */
+/* Accent Dot - Signature Emerald Mark */
 .logo-text::after {
   content: '.';
-  color: #dc2626;
+  color: #059669;
   font-size: 32px;
   font-weight: 900;
-  -webkit-text-fill-color: #dc2626;
-  text-shadow: 0 0 12px rgba(220, 38, 38, 0.4);
+  -webkit-text-fill-color: #059669;
+  text-shadow: 0 0 12px rgba(5, 150, 105, 0.4);
   animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
   0%, 100% {
-    text-shadow: 0 0 12px rgba(220, 38, 38, 0.4);
+    text-shadow: 0 0 12px rgba(5, 150, 105, 0.4);
   }
   50% {
-    text-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+    text-shadow: 0 0 20px rgba(5, 150, 105, 0.6);
   }
 }
 
@@ -341,7 +341,7 @@ onUnmounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #dc2626, #b91c1c);
+  background: linear-gradient(90deg, #059669, #047857);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -351,7 +351,7 @@ onUnmounted(() => {
 
 /* Hover Effects */
 .logo:hover .logo-text {
-  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #dc2626 100%);
+  background: linear-gradient(135deg, #059669 0%, #047857 50%, #059669 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -434,7 +434,7 @@ onUnmounted(() => {
   left: 0;
   width: 0;
   height: 2px;
-  background: #dc2626;
+  background: #059669;
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -655,7 +655,7 @@ onUnmounted(() => {
 }
 
 .search-hit-item.is-active {
-  background: #dc262610;
+  background: #05966910;
 }
 
 .hit-icon {
@@ -673,7 +673,7 @@ onUnmounted(() => {
 }
 
 .search-hit-item.is-active .hit-icon {
-  background: #dc2626;
+  background: #059669;
   color: #ffffff;
 }
 
@@ -709,7 +709,7 @@ onUnmounted(() => {
 
 .search-hit-item.is-active .hit-action {
   opacity: 1;
-  color: #dc2626;
+  color: #059669;
   transform: translateX(4px);
 }
 
@@ -775,7 +775,7 @@ onUnmounted(() => {
   width: 24px;
   height: 24px;
   border: 2px solid #e2e8f0;
-  border-top-color: #dc2626;
+  border-top-color: #059669;
   border-radius: 50%;
   margin: 0 auto 0.75rem;
   animation: spin 0.8s linear infinite;

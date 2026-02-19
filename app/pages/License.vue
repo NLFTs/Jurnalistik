@@ -43,7 +43,7 @@
         </div>
         <div class="ml-10 space-y-4">
           <p class="text-neutral-600 leading-relaxed text-lg">
-          Tanpa otorisasi tertulis yang jelas dan sah dari NLFT, tidak ada individu atau entitas yang diizinkan untuk:
+          Tanpa otorisasi tertulis yang jelas dan sah dari NLFTs, tidak ada individu atau entitas yang diizinkan untuk:
           </p>
           <div class="space-y-2 text-neutral-500 pl-4">
             <p>memodifikasi, atau membuat karya turunan</p>
@@ -71,7 +71,7 @@
           <h2 class="text-xl font-bold tracking-tight">VIOLATION</h2>
         </div>
         <p class="ml-10 text-neutral-600 leading-relaxed text-lg">
-            Segala bentuk Pelanggaran pada webiste ini tanpa izin tersebut merupakan pelanggaran hak kekayaan intelektual dan dapat mengakibatkan tindakan hukum perdata dan/atau pidana.
+            Segala bentuk Pelanggaran terhadap blog ini tanpa izin tersebut merupakan pelanggaran hak kekayaan intelektual dan dapat mengakibatkan tindakan hukum perdata dan/atau pidana.
         </p>
       </section>
 
@@ -102,13 +102,10 @@
         </div>
         <div class="ml-10 space-y-6 text-neutral-600 leading-relaxed text-lg">
           <p>
-            This license shall be governed by and construed exclusively in accordance with 
-            the laws of the Republic of Indonesia and applicable internal corporate policies 
-            of NLFTs.
+           Lisensi ini diatur dan ditafsirkan secara eksklusif sesuai dengan hukum Republik Indonesia dan kebijakan internal perusahaan NLFTs yang berlaku.
           </p>
           <p>
-            No foreign jurisdiction, international treaty, or external legal framework shall 
-            apply unless explicitly agreed upon in writing by NLFTs.
+            Tidak ada hukum negara asing, perjanjian internasional, atau kerangka hukum eksternal yang akan berlaku kecuali disepakati secara tertulis oleh NLFTs.
           </p>
         </div>
       </section>

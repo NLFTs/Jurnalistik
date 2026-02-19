@@ -18,56 +18,44 @@
       <!-- HERO SECTION -->
       <header class="grid lg:grid-cols-12 gap-12 mb-32 md:mb-56 items-start">
         
-        <!-- Left Column: Typography -->
-        <div class="lg:col-span-8 relative">
+        <!-- Left Column: Typography (col-span-9 agar "Creative" muat penuh, root pakai overflow-x-hidden) -->
+        <div class="lg:col-span-9 relative">
           <h1 class="font-black text-[13vw] lg:text-[11vw] leading-[0.85] tracking-tighter uppercase text-neutral-900 mix-blend-darken">
             <!-- Line 1 -->
             <div class="overflow-hidden pb-2 -mb-2">
-              <span class="block title-reveal translate-y-full origin-bottom-left">Digital</span>
+              <span class="block whitespace-nowrap title-reveal translate-y-full origin-bottom-left">Digital</span>
             </div>
             <!-- Line 2 -->
             <div class="overflow-hidden pb-2 -mb-2">
-              <span class="block title-reveal translate-y-full origin-bottom-left text-emerald-400">Reality</span>
+              <span class="block whitespace-nowrap title-reveal translate-y-full origin-bottom-left text-emerald-400">Creative</span>
             </div>
             <!-- Line 3 -->
             <div class="overflow-hidden pb-4 -mb-4">
-              <span class="block title-reveal translate-y-full origin-bottom-left">Architect</span>
+              <span class="block whitespace-nowrap title-reveal translate-y-full origin-bottom-left">School</span>
             </div>
           </h1>
         </div>
         
         <!-- Right Column: Context & Nav -->
-        <div class="lg:col-span-4 flex flex-col justify-between h-full pt-4 lg:pt-8 space-y-12">
+        <div class="lg:col-span-3 flex flex-col justify-between h-full pt-4 lg:pt-8 space-y-12">
            
            <div class="hero-stagger opacity-0 translate-y-4">
               <div class="w-12 h-1 bg-emerald-500 mb-6"></div>
               <h2 class="text-xl md:text-2xl font-medium leading-relaxed">
-                Blog tentang rekayasa yang mengaburkan batas antara<br class="hidden xl:block">
-                <span class="text-emerald-400">seni</span> and <span class="text-emerald-400">kegunaan</span>.
+                Artikel tentang rekayasa yang mengaburkan batas antara<br class="hidden xl:block">
+                <span class="text-emerald-400">seni</span> dan <span class="text-emerald-400">Fungsi</span>.
               </h2>
            </div>
            
-           <div class="grid grid-cols-2 gap-8 hero-stagger opacity-0 translate-y-4">
+           <div class="grid gap-8 hero-stagger opacity-0 translate-y-4">
              <div>
-                <span class="block text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 mb-3">Stack Strategy</span>
+                <span class="block text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 mb-3">supported by</span>
                 <ul class="text-sm font-mono space-y-2 text-neutral-600">
-                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> Nuxt Ecosystem</li>
-                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span> Laravel 12</li>
-                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-neutral-300 rounded-full"></span> Vue.js</li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> <a class="hover:text-emerald-500 transition-colors duration-500" href="https://nlfts.dev">NLFTs Company</a></li>
+                  <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span> <a class="hover:text-red-500 transition-colors duration-500" href="https://smkassalaambandung.sch.id">SMK Assalaam Bandung</a></li>
                 </ul>
              </div>
-             
-             <div>
-                <span class="block text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 mb-3">Connect</span>
-                 <nav class="flex flex-col gap-2 text-sm font-bold uppercase tracking-wider">
-                   <a href="https://github.com/DavinGM" target="_blank" class="group flex items-center gap-2 hover:text-emerald-600 transition-colors">
-                     GitHub <span class="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">→</span>
-                   </a>
-                   <a href="https://x.com/Davingm_dev" target="_blank" class="group flex items-center gap-2 hover:text-emerald-600 transition-colors">
-                     X.com <span class="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">→</span>
-                   </a>
-                 </nav>
-             </div>
+            
            </div>
 
         </div>
@@ -76,36 +64,33 @@
       <!-- FOCUS GRID (Filling the void with meaning) -->
       <section class="grid md:grid-cols-3 gap-px bg-neutral-200 border border-neutral-200 mb-32 section-focus opacity-0">
         
-        <!-- Grid Item 1 -->
         <div class="bg-white p-12 hover:bg-neutral-50 transition-colors duration-500 group">
           <div class="text-emerald-600 mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4"/><path d="M12 16V8"/></svg>
           </div>
-          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">Utamakan Kinerja</h3>
+          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">Akurasi Utama</h3>
           <p class="text-neutral-500 leading-relaxed text-sm">
-            Optimalisasi obsesif untuk Core Web Vitals. Membangun antarmuka yang bereaksi secara instan terhadap maksud pengguna..
+            Validasi data yang ketat sebelum publikasi. Kami memastikan setiap laporan yang sampai ke pembaca telah melalui proses verifikasi fakta yang objektif.
           </p>
         </div>
 
-        <!-- Grid Item 2 -->
         <div class="bg-white p-12 hover:bg-neutral-50 transition-colors duration-500 group">
           <div class="text-emerald-600 mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
-          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">Fakta Lapangan</h3>
+          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">Lensa Sekolah</h3>
           <p class="text-neutral-500 leading-relaxed text-sm">
-            Mengumpulkan data langsung dari pengguna untuk memahami kebutuhan dan preferensi mereka, serta pengalaman pribadi penulis dalam menyampaikan informasi.
+            Merekam realitas langsung dari lorong sekolah. Mengangkat suara siswa dan guru SMK Assalaam sebagai jantung utama pemberitaan kami.
           </p>
         </div>
 
-        <!-- Grid Item 3 -->
         <div class="bg-white p-12 hover:bg-neutral-50 transition-colors duration-500 group">
           <div class="text-emerald-600 mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/><line x1="3.27 6.96" x2="12" y2="12.01"/><line x1="20.73 6.96" x2="12" y2="12.01"/></svg>
           </div>
-          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">SEO dan Pemahaman</h3>
+          <h3 class="text-lg font-bold uppercase tracking-wide mb-4 group-hover:translate-x-1 transition-transform">Wawasan Global</h3>
           <p class="text-neutral-500 leading-relaxed text-sm">
-            SEO dan pemahaman yang mendalam tentang alur pengguna untuk meningkatkan pengalaman pengguna dan efektivitas situs web.
+            Menghubungkan konteks lokal dengan tren dunia. Mendorong literasi digital pembaca melalui analisis mendalam terhadap isu teknologi dan sosial terkini.
           </p>
         </div>
       </section>
@@ -126,7 +111,7 @@
                "Kami membangun bukan hanya untuk berfungsi,<br> tetapi untuk <span class="bg-emerald-100 text-emerald-800 px-2 italic font-serif font-semibold"> menginspirasi.</span>."
              </blockquote>
              <p class="text-xs font-mono uppercase tracking-widest text-neutral-400 mt-6">
-               © 2026 DavinGM Logic.
+               © 2026 Jurnalistik SMK Assalaam Bandung.
              </p>
           </div>
       </footer>
@@ -141,14 +126,17 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 useSeoMeta({
-  title: 'DavinGM — Digital Reality Architect',
-  description: 'Portfolio and engineering log of DavinGM. Specializing in Nuxt, Vue.js, and high-performance web architecture.',
-  keywords: 'Nuxt, Vue, Web Development, Design Systems, Frontend Engineer',
-  ogImage: '/images/blog-og.jpg',
+  title: 'Jurnalistik — Digital Reality Architect',
+  description: 'Blog rekayasa digital NLFTs. Nuxt, Vue.js, dan arsitektur web berperforma tinggi.',
+  keywords: 'Nuxt, Vue, Web Development, Design Systems, Frontend Engineer, Jurnalistik, NLFTs',
+  ogUrl: 'https://jurnalistik.nlfts.dev',
+  ogImage: 'https://jurnalistik.nlfts.dev/images/image.png',
+  ogTitle: 'Jurnalistik — Digital Reality Architect',
+  ogDescription: 'Blog rekayasa digital NLFTs. Nuxt, Vue.js, dan arsitektur web berperforma tinggi.',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'DavinGM — Digital Reality Architect',
-  twitterDescription: 'Portfolio and engineering log of DavinGM. Specializing in Nuxt, Vue.js, and high-performance web architecture.',
-  twitterImage: '/images/blog-og.jpg',
+  twitterTitle: 'Jurnalistik — Digital Reality Architect',
+  twitterDescription: 'Blog rekayasa digital NLFTs. Nuxt, Vue.js, dan arsitektur web berperforma tinggi.',
+  twitterImage: 'https://jurnalistik.nlfts.dev/images/image.png',
   twitterCreator: '@davingm'
 })
 

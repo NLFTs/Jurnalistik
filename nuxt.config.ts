@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       // { status: 404 } to createError (which expects message/statusMessage).
       {
         name: 'nuxt-root-slash',
-        configureServer (server: any) {
+        configureServer(server: any) {
           server.middlewares.use((req: any, res: any, next: () => void) => {
             const path = req.url?.split('?')[0] ?? ''
             if (path === '/_nuxt/' || path === '/_nuxt') {
@@ -66,8 +66,8 @@ export default defineNuxtConfig({
 
   // SEO modules configuration
   site: {
-    url: 'http://blog.davingm.com',
-    name: 'DavinGM Blog',
+    url: 'https://jurnalistik.nlfts.dev',
+    name: 'Jurnalistik',
     description: 'Kumpulan tulisan mengenai teknologi, pemrograman, dan desain antarmuka moderen.',
     defaultLocale: 'id',
   },

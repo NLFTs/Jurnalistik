@@ -3,22 +3,21 @@
     
     <!-- Header -->
     <header class="pt-24 md:pt-48 pb-16 md:pb-24 border-b border-neutral-100 relative">
-       <!-- Decoration -->
-      <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-neutral-50 to-transparent -z-10 skew-x-12 opacity-50"></div>
+       <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-neutral-50 to-transparent -z-10 skew-x-12 opacity-50"></div>
 
       <div class="max-w-5xl mx-auto px-6 md:px-12">
         <span class="block text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 mb-8 overflow-hidden">
-          <span class="block translate-y-full reveal-text">01 // MANIFESTO_PLATFORM</span>
+          <span class="block translate-y-full reveal-text">01 // EDISI_REDAKSI_UTAMA</span>
         </span>
-        
+
         <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1] mb-12 text-neutral-900 mix-blend-multiply">
-          <div class="overflow-hidden pb-2"><span class="block translate-y-full reveal-text">Rekayasa</span></div>
-          <div class="overflow-hidden pb-4"><span class="block translate-y-full reveal-text"><em class="text-emerald-600 font-serif not-italic pr-4">Masa Depan</em> Web.</span></div>
+          <div class="overflow-hidden pb-2"><span class="block translate-y-full reveal-text">Menyingkap</span></div>
+          <div class="overflow-hidden pb-4"><span class="block translate-y-full reveal-text"><em class="text-emerald-600 font-serif not-italic pr-4">Kebenaran</em> Digital.</span></div>
         </h1>
         
         <div class="max-w-2xl overflow-hidden">
           <p class="text-xl md:text-2xl font-light text-neutral-600 leading-relaxed translate-y-full reveal-text opacity-0">
-            Basis pengetahuan digital yang didedikasikan untuk arsitektur web modern, pengalaman pengembang (DX), dan seni kerajinan perangkat lunak.
+            Investigasi mendalam, laporan eksklusif, dan analisis tajam mengenai arus informasi di balik layar digital serta teknologi global.
           </p>
         </div>
       </div>
@@ -31,23 +30,24 @@
       <div class="lg:col-span-7 space-y-24">
         
         <!-- Section: The Mission -->
-        <section class="reveal-section opacity-0 translate-y-12">
+     <section class="reveal-section opacity-0 translate-y-12">
           <h2 class="text-xs font-bold uppercase tracking-widest mb-8 text-emerald-600 flex items-center gap-3">
-            <span class="w-8 h-px bg-emerald-600"></span> Misi Utama
+            <span class="w-8 h-px bg-emerald-600"></span> Haluan Redaksi
           </h2>
           <div class="prose prose-lg prose-neutral font-light text-neutral-600">
             <p class="text-3xl font-medium text-neutral-900 mb-8 leading-tight">
-              Menjembatani celah antara <br>
-              <span class="text-neutral-400">teori dan produksi.</span>
+              Menjadi jendela informasi bagi <br>
+              <span class="text-neutral-400">akademisi dan industri.</span>
             </p>
             <p class="mb-6">
-              Platform <span class="text-emerald-600">blog</span> ini dibangun sebagai sumber daya Pengetahuan bagi para pengembang yang menavigasi kompleksitas ekosistem <span class="text-emerald-600">JavaScript</span> modern maupun <span class="text-emerald-600">php</span> tradisional
+              Platform <span class="text-emerald-600">Jurnalistik</span> ini hadir sebagai wadah literasi bagi civitas akademika <span class="text-emerald-600">SMK Assalaam Bandung</span> serta pembaca luas untuk membedah dinamika teknologi dan sosial.
             </p>
             <p>
-              Kami tidak hanya berbagi tutorial yang kuno dan tidak relevan, kami mendokumentasikan <strong>keputusan arsitektural</strong>, membedah <strong>praktik terbaik ( Best Practice)</strong>, dan mengeksplorasi "<span class="text-emerald-600">Kenapa?</span>" di balik setiap baris kode. Mulai dari pembahasan mendalam tentang <strong>internal Framework</strong> hingga strategi <strong>Desain Sistem</strong> yang stabil dan mudah di pelihara.
+              Kami tidak sekadar menyajikan berita permukaan, kami melakukan <strong>investigasi mendalam</strong>, merangkum <strong>karya inovatif siswa</strong>, dan mengulas perspektif "<span class="text-emerald-600">Dibalik Fakta</span>" dari setiap peristiwa. Mulai dari laporan eksklusif <strong>kegiatan internal</strong> hingga opini kritis mengenai <strong>tren global</strong> yang relevan bagi generasi masa depan.
             </p>
           </div>
         </section>
+
 
         <!-- Section: Content Philosophy -->
         <section class="reveal-section opacity-0 translate-y-12">
@@ -126,7 +126,7 @@
                Menemukan nilai dari tulisan kami? Dukung kami untuk terus menyajikan konten teknis berkualitas tinggi.
              </p>
              <div class="flex flex-col gap-4">
-               <a href="https://afdian.com/@davingm" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-red-500 text-white font-medium rounded-full hover:bg-red-600 transition-colors duration-300 group w-fit shadow-lg shadow-red-500/30">
+               <a href="https://buymeacoffee.com" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-red-500 text-white font-medium rounded-full hover:bg-red-600 transition-colors duration-300 group w-fit shadow-lg shadow-red-500/30">
                  Traktir Kopi ☕
                </a>
              </div>
