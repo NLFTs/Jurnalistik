@@ -58,9 +58,9 @@
   <div 
     v-else
     @click="$emit('preview', post)"
-    class="blog-card group relative flex flex-col h-full overflow-hidden transition-all duration-500 bg-white ring-1 ring-neutral-900/5 hover:ring-emerald-500/20 shadow-sm hover:shadow-2xl rounded-3xl cursor-zoom-in"
+    class="blog-card group relative flex flex-col h-full overflow-hidden transition-all duration-500 bg-white ring-1 ring-neutral-900/5 hover:ring-emerald-500/20 shadow-sm hover:shadow-2xl rounded-2xl cursor-zoom-in"
   >
-    <div class="relative w-full h-full overflow-hidden bg-neutral-100 aspect-[4/5] md:aspect-auto">
+    <div class="relative w-full h-full overflow-hidden bg-neutral-100 aspect-video">
       <img 
         v-if="post.image" 
         :src="post.image" 

@@ -81,7 +81,7 @@ const authors = [
     image: "https://avatars.githubusercontent.com/u/228851591?v=4",
     gradient: "from-emerald-400 to-emerald-600",
     articles: 2,
-    joined: "Feb 2026",
+    joined: "Feb 2024",
     website: "davingm.com"
   },
   {
@@ -91,19 +91,19 @@ const authors = [
     image: "https://avatars.githubusercontent.com/u/228839961?v=4",
     gradient: "from-blue-400 to-blue-600",
     articles: 0,
-    joined: "Feb 2026",
+    joined: "Feb 2024",
     website: "ilmanwrites.nlfts.dev"
   },
-//   {
-//     name: "Erga Praditya Nugraha",
-//     role: "DevOps Engineer · Cloud Architect",
-//     bio: "DevOps specialist dengan expertise dalam cloud infrastructure, CI/CD, dan containerization. Passionate tentang automation dan best practices dalam deployment.",
-//     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
-//     gradient: "from-purple-400 to-purple-600",
-//     articles: 15,
-//     joined: "Jun 2023",
-//     website: "alexchen.tech"
-//   },
+  {
+    name: "Ayesha nabillah",
+    role: "Visual Jurnalis",
+    bio: "ay ay captain.",
+    image: "./images/avatar/ayhesa.png",
+    gradient: "from-purple-400 to-purple-600",
+    articles: 0,
+    joined: "Feb 2026",
+    website: ""
+  },
 //   {
 //     name: "Maria Rodriguez",
 //     role: "UI/UX Designer · Frontend Developer",

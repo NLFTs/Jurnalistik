@@ -115,8 +115,7 @@ onMounted(() => {
 })
 
 const getGridSpan = (index) => {
-  const pattern = ['md:col-span-8', 'md:col-span-4', 'md:col-span-4', 'md:col-span-4', 'md:col-span-4', 'md:col-span-12']
-  return pattern[index % pattern.length]
+  return 'md:col-span-4'
 }
 
 const getSkeletonSpan = (index) => {
